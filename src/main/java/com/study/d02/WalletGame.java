@@ -18,7 +18,8 @@ public class WalletGame {
             int bet = bet(wallet); //下注金額
             if (bet == 0)   break;
             
-            guess(bet, wallet); //比大小
+            int ans = new Random().nextInt(12) + 1; //1~12的亂數
+            guess(ans, bet, wallet); //比大小
             
         } while (true);
     }
@@ -37,13 +38,11 @@ public class WalletGame {
             }else{
                 return bet;
             }
-            
-            
     }
     
     //比大小
-    void guess(int bet, Wallet wallet){
-        int ans = new Random().nextInt(12) + 1; //1~12的亂數
+    void guess(int ans, int bet, Wallet wallet){
+        
         System.out.println("若猜比七大(含) 輸入: 1, 若猜比七小 輸入:2 ==>  ");
         int guess = sc.nextInt(); //取得使用者的選擇
         switch(guess){
