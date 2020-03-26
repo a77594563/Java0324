@@ -24,6 +24,17 @@ public class Wallet {
         return money;
     }
     
+    // 修改(增加 或 減少) money
+    void updateMoney(int m){
+        // 是否夠扣款的判斷
+        if (m >= 0 || (m < 0 && money >= Math.abs(m)) ) {
+            money += m;
+        }else{
+            System.out.println("扣款失敗");
+        }
+        
+    }
+    
     // 印出皮夾內的資料
     void printWallet(){
         System.out.printf("我的皮夾裡有 $%,d\n", money);
