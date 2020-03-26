@@ -7,7 +7,7 @@ public class CardDemo {
         c1.setNumber(12345);
         c1.setBalance(Integer.MAX_VALUE);
         
-        Card c2 = new Card("學生卡", 33445, 20000);
+        Card c2 = new Card("學生卡", 33445, -20000);
         
         System.out.println(c1); //c1.toString()
         System.out.println(c2); //c2.toString()
