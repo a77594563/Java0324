@@ -2,21 +2,21 @@ package com.study.d06.youbike;
 
 public class Youbike {
 
-    private int _id;
-    private String sno;
-    private String sna;
-    private String tot;
-    private String sbi;
-    private String sarea;
-    private String mday;
-    private String lat;
-    private String lng;
-    private String ar;
+    private int _id; // 序號
+    private String sno; // 站場編號
+    private String sna; // 站場名稱
+    private String tot; // 單車總量
+    private String sbi; // 可借數量
+    private String sarea; // 站場行政區域
+    private String mday; // 資料更新時間
+    private String lat; // 緯度
+    private String lng; //經度
+    private String ar; // 站場地址
     private String sareaen;
     private String snaen;
     private String aren;
-    private String bemp;
-    private String act;
+    private String bemp; // 可還數量(已借出)
+    private String act; //站場狀態(1: 表示正使用中)
 
     public int getId() {
         return _id;
