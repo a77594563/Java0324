@@ -5,12 +5,12 @@ import java.util.Calendar;
 public class Person {
     private static int age;
     
-    // static 初始值的實作區段
+    // static 初始值得實作區段
     static {
         age = 18;
     }
+    
     private String name;
-
     // 共同建構子實作
     {
         Calendar cal = Calendar.getInstance();
@@ -19,11 +19,14 @@ public class Person {
     }
     
     public Person() {
+        
     }
     
     public Person(int x) {
+        
     }
-    public String getName(){
+    
+    public String getName() {
         return name;
     }
 }

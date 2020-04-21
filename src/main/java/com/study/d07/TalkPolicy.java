@@ -1,6 +1,6 @@
 package com.study.d07;
 
-class Talk{
+class Talk {
     void a(){
         b();
         c();
@@ -20,7 +20,7 @@ class Talk{
     }
 }
 
-//類別成員與物件成員溝通法則
+// 類別成員與物件成員溝通法則
 public class TalkPolicy {
     public static void main(String[] args) {
         Talk.c();
@@ -28,5 +28,6 @@ public class TalkPolicy {
         
         Talk talk = new Talk();
         talk.a();
+        talk.b();
     }
 }

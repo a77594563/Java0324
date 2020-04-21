@@ -1,19 +1,15 @@
 package com.study.d07;
 
 public class Book {
-    private  int price;
-    
-    //建構子
-    public Book(){
-        this(50);
-    }
-    
-    //建構子
-    public Book(int p){
+    private int price;
+    // 建構子
+    public Book(int p) {
         price = p;
     }
-    
-    public int getPrice(){
+    public Book() {
+        this(50);
+    }
+    public int getPrice() {
         return price;
     }
 }

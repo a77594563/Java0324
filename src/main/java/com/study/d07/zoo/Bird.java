@@ -1,7 +1,7 @@
 package com.study.d07.zoo;
 
-public class Bird extends Animal{
-    
+public class Bird extends Animal {
+
     @Override
     public void eat() {
         System.out.println("吃小米");
@@ -11,6 +11,7 @@ public class Bird extends Animal{
     public void move() {
         System.out.println("會飛");
     }
+    
     
     
 }

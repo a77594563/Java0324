@@ -4,8 +4,8 @@ public class Animal {
     // 物件屬性
     private String name; // 動物的名字
     private int legs; // 動物的腳數
-
-    // 封裝的方法 -> 屬性
+    
+    // 封裝的方法(對象 -> 屬性)
     public String getName() {
         return name;
     }
@@ -21,12 +21,12 @@ public class Animal {
     public void setLegs(int legs) {
         this.legs = legs;
     }
-
+    
     // 其他商業方法
     public void eat(){
         System.out.println("吃食物");
     }
-
+    
     public void move(){
         System.out.println("會移動");
     }
