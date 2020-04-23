@@ -1,11 +1,7 @@
 package com.study.d09.pet;
 
-public class Shiba implements Dog {
+public class Shiba extends ADog{
 
-    @Override
-    public void eat() {
-        System.out.println("狗罐頭");
-    }
 
     @Override
     public void skill() {
