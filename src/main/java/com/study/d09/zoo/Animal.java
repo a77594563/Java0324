@@ -26,4 +26,9 @@ public class Animal {
         this.legs = legs;
     }
 
+    @Override
+    public String toString() {
+        return "Animal{" + "name=" + name + ", legs=" + legs + '}';
+    }
+
 }
