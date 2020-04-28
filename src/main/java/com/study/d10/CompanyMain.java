@@ -8,5 +8,6 @@ public class CompanyMain {
         Department.Employee emp = dept.new Employee();
         System.out.print(dept.getName() + " 的工作是 ");
         emp.job();
+        emp.printSalary();
     }
 }
