@@ -1,19 +1,33 @@
 package com.study.d14;
 
 import java.io.File;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import static java.util.stream.Collectors.toList;
 import java.util.stream.Stream;
 
-public class MyStockDemo {
-    public static void main(String[] args) throws Exception {
-        // 1. CSV 資料剖析(整理並釐清資料)
-        File file = new File("src\\main\\java\\com\\study\\d14\\BWIBBU_d.csv");
-        Scanner sc = new Scanner(file,"UTF-8").useDelimiter("\\A"); //全選
+public class MyStockDemo3 {
+    public static void main(String[] args){
+        for (int m = 1; m <= 5; m++) {
+            for (int d = 1; d <= 31; d++) {
+                try {
+                    action(2020, m, d);
+                    Thread.sleep(1000);
+                } catch (Exception e) {
+                }
+            }
+        }
+    }
+    public static void action(int yyyy, int mm, int dd) throws Exception {
+        // 遠端的 URL + CSV 資料剖析(整理並釐清資料)
+        String path = "https://www.twse.com.tw/exchangeReport/BWIBBU_d?response=csv&date=%d%02d%02d&selectType=ALL";
+        path = String.format(path, yyyy, mm, dd);
+        URL url = new URL(path);
+        Scanner sc = new Scanner(url.openStream()).useDelimiter("\\A"); //全選
         String data = sc.next();
-//        System.out.println(data);
+        //System.out.println(data);
         String[] rows = data.split("\n"); //以斷行來分割每筆資料
         List<MyStock> myStocks = new ArrayList<>();
         for (String row : rows) {
@@ -36,7 +50,6 @@ public class MyStockDemo {
         //stream.forEach(System.out::println);
         // 4.2 將所查到的結果儲存在新的集合中
         List<MyStock> results = stream.collect(toList());
-        System.out.println(results);
-        
+        System.out.println(yyyy+"/"+ mm+"/"+ dd + results);
     }
 }
