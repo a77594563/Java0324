@@ -1,0 +1,23 @@
+[
+    {
+        "username": "John",
+        "password": "1234",
+        "salary": 50000,
+        "active": true,
+        "expired": "2020-12-31"
+    },
+    {
+        "username": "Mary",
+        "password": "1234",
+        "salary": 80000,
+        "active": false,
+        "expired": "2020-12-31"
+    },
+    {
+        "username": "jo",
+        "password": "1111",
+        "salary": 70000,
+        "active": true,
+        "expired": "2020-04-30"
+    }
+]
