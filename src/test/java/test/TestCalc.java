@@ -1,9 +1,12 @@
-package com.study.d18;
+package test;
 
 import com.study.d18.Calc;
+import org.junit.Test;
 
 public class TestCalc {
-    public static void main(String[] args) {
+    
+    @Test
+    public void test() {
         // 3A Arrange Act Assert
         // Arrange
         Calc calc = new Calc();

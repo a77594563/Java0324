@@ -1,7 +1,12 @@
-package com.study.d18;
+package test;
+
+import com.study.d18.CheckSex;
+import org.junit.Test;
 
 public class TestCheckSex {
-    public static void main(String[] args) {
+   
+    @Test
+    public void test() {
         // Arrange
         CheckSex cs = new CheckSex();
         String id = "A1223344556";
