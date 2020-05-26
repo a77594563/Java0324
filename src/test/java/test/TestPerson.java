@@ -18,4 +18,24 @@ public class TestPerson {
         assert (excepted == act) : excepted + " == " + act;
         System.out.println("Pass");
     }
+    
+    @Test
+    public void test2() {
+        // Arrange
+        Person p = new Person();
+        int age = 120;
+        int excepted = -1; // 期望
+        // Act
+        p.setAge(age);
+        int act = p.getAge();
+        // Assert
+        assert (excepted == act) : excepted + " == " + act;
+        System.out.println("Pass");
+    }
+    
+    @Test
+    public void testAll(){
+        test();
+        test2();
+    }
 }
