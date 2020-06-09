@@ -26,7 +26,7 @@ public class GetPrice2 implements Runnable{
             SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
             String begin = sdf.format(new Date());
             stock = YahooFinance.get(symbol);
-            int ms = new Random().nextInt(2000);
+            int ms = new Random().nextInt(2500);
             Thread.sleep(ms);
             String finish = sdf.format(new Date());
             double price = stock.getQuote().getPrice().doubleValue();
