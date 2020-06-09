@@ -1,15 +1,10 @@
 package com.study.d22.scheduled;
 
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
-
-
 
 // 取得金融商品報價
 public class GetPrice2 implements Runnable{

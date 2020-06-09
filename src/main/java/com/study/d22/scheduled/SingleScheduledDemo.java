@@ -9,7 +9,7 @@ public class SingleScheduledDemo {
 
     public static void main(String[] args) throws Exception {
         ScheduledExecutorService exec = Executors.newSingleThreadScheduledExecutor();
-        System.err.println("停1秒後執行");
+        System.out.println("停1秒後執行");
         String symbol = "2330.TW";
         ScheduledFuture<Double> future = exec.schedule(new GetPrice(symbol), 1, TimeUnit.SECONDS);
         double price = future.get();
