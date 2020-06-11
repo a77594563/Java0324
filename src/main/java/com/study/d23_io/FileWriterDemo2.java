@@ -8,8 +8,9 @@ public class FileWriterDemo2 {
         File f = new File("src/main/java/com/study/d23_io/Myfile.txt");
         
         try(FileWriter fw = new FileWriter(f, true)) { // 任何有實作 AutoCloseable 都可如此使用 → 自動close
-            fw.write("ABC");
+            fw.write("王大槌");
         } catch (Exception e) {
         }
+        System.out.println("資料寫入完成");
     }
 }
