@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class BMI implements Serializable{
     private double h;
-    private double w;
+    private transient double w; // 若此項是敏感資料,可用 transient ,此項將不會出會在序列化檔案裡
     private double bmi;
 
     public BMI() {
